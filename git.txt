@@ -1,0 +1,127 @@
+git clone <url> <folder name>
+git status 
+git diff --> code me changes njr aata hai
+
+git commit -am "add & commit shortcut"
+git pull --> updates local repo to remote repo
+
+origin means base root of  repo   
+
+
+*****************************
+in git env there are 3 areas:-
+1. Repository   ( final commited changes)  isse permanent changes ho jata h
+2. Working Directory 	(temp  changes)
+3. Staging index    ( About to commit changes)
+
+
+--> ab smjh aaya in sbse(git add. , git commit) changes kaise propogate hote hai. 
+--> commit mtlb ek save point.
+
+
+********************* Review Repository *****************************
+--> ab agr dekhna ho ki kitne commits huye h to likho -> git log
+
+1. git log --> latest commit or baki phichli commits ko dikhata hai
+2. git log -3 --> latest 3 commit
+3. git log -p --> (git log)  ke sath (git diff) ka v kam krta h. mtlb actual changes bhi dikhta ha
+4. git log --oneline --> jldi  se commits ko go trough krna hoga to ise use krna. isse sabhi ki SHA id aur commits msg dekh lena.
+5. git log --stat --> isse kaun sa file modify hua h ye dikhta, lkin actual content kya  modify hua h ye nhi dikhta.
+
+***************
+git restore
+
+git show <SHA id>
+	
+	-----------> latest commit	(*** head  ****  --> yha point kr rha hoga )
+
+	-----------> prev commit
+	-----------> prev commit
+
+
+
+********************
+
+ BRANCHING, TAGGING & MERGING
+
+1. git tag:-
+	tag a specific commit (jha hm SHA id ko tag kr dete hai.
+	command to add tag -->git tag -a betaV1.0 <SHA id> -m "My Beta Release"
+	command to remove tag -->git tag -d betaV1.0 
+2. git branch:-
+	command to to see all  branch--> git branch
+	command to create a brach --> git  branch <new_branch_name>
+	command to change branch --> git checkout <new_branch_name>
+	command to create a brach & change branch with command --> git checkout -b <new_branch_name>
+	command to merge branch  --> git merge <new_branch_name>
+
+3. git stash
+	added your changes to stash area   
+	saved working dir and index state
+	--> git stash list 
+	--> git stash apply
+
+4. git checkout
+5. git merge
+
+
+
+******************** Undoing changes in git *************************
+1. git commit --amend 
+	amend the most recent commit
+	git commit --amend 
+2. git revert
+	revert given commit
+	--> git revert <SHA id or commit id>
+3. git reset
+	commit ko hi delete kr do 
+	delete commit ( dangerous command )
+	git reset --soft <SHA id or commit id>
+
+
+	--soft
+	--mixed
+	--hard
+
+
+******************  Push a commit *************
+
+
+git remote add --> map a local repo to remote repo
+
+
+
+
+***********config***********
+
+-->git config --global user.name "Umang Prakash"
+-->git config --global user.email "umangprakash21@gmail.com
+-->git config --list
+
+github.com->settings->developer setting->tokens(classic)->generate new tokens->generate new tokens(classic)---	(name, no expiration, tick all)
+
+isse token generate ho jaega
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
